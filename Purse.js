@@ -1,12 +1,12 @@
 const Money = require('./src/Money');
 const CreditCard = require('./src/CreditCard');
-const BusinessCard = require('./src/BusinessCard');
+const BusinessCardGenerator = require('./src/BusinessCardGenerator');
 
 class Purse {
   main() {
-    new Money();
-    new BusinessCard();
-    new CreditCard();
+    const money = new Money();
+    const businessCard = new BusinessCardGenerator().generateBusinessCard();
+    const creditCard = new CreditCard();
 
     console.log('Halt!')
   }
