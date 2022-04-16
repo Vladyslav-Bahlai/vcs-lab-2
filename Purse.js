@@ -4,7 +4,7 @@ const BusinessCard = require('./src/BusinessCard');
 
 class Purse {
   main() {
-    new Money();
+    new Money(1000, '$');
     new BusinessCard();
     new CreditCard();
 
